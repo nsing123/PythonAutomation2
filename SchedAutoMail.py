@@ -39,7 +39,7 @@ ob=s.SMTP('smtp.gmail.com',587)
 ob.ehlo()
 ob.starttls()
 email_from='neelpythonpython@gmail.com'
-email_to='neelanshuni@gmail.com'
+email_to='neelpythonpython@gmail.com'
 subject="Python Email"
 try:
     ob.login('neelpythonpython@gmail.com','akke umkx uhyr qvja')
@@ -70,7 +70,7 @@ text=msg.as_string()
 def job():
     ob.sendmail(email_from, email_to, text)
 
-schedule.every().day.at("17:30").do(job)
+schedule.every().day.at("11:47").do(job)
 ob.quit()
 
 
