@@ -3,7 +3,7 @@ import DatabaseConnection as db
 import pandas as pd
 import gspread_dataframe
 import smtplib as s
-from  email.mime.text import MIMEText
+from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
@@ -70,7 +70,7 @@ text=msg.as_string()
 def job():
     ob.sendmail(email_from, email_to, text)
 
-schedule.every().day.at("11:47").do(job)
+schedule.every().day.at("11:58").do(job)
 ob.quit()
 
 
